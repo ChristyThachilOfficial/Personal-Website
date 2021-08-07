@@ -149,7 +149,7 @@
                       alt=""
                     />
                   </div>
-                  <div class="col-md-4 col-4">
+                  <div class="col-md-4 col-4 ">
                     <img
                       src="images/icons8-html-5-48.png"
                       class="skillicons img-fluid"
@@ -159,14 +159,14 @@
                 </div>
 
                 <div class="row">
-                  <div class="col-md-4 col-4">
+                  <div class="col-md-4 col-4 ">
                     <img
                       src="images/icons8-bootstrap-48.png"
                       class="skillicons img-fluid"
                       alt=""
                     />
                   </div>
-                  <div class="col-md-4 col-4">
+                  <div class="col-md-4 col-4 ">
                     <img
                       src="images/icons8-nodejs-48.png"
                       class="skillicons img-fluid"
@@ -183,14 +183,14 @@
                 </div>
 
                 <div class="row">
-                  <div class="col-md-4 col-4">
+                  <div class="col-md-4 col-4 ">
                     <img
                       src="images/icons8-css3-48.png"
                       class="skillicons img-fluid"
                       alt=""
                     />
                   </div>
-                  <div class="col-md-4 col-4">
+                  <div class="col-md-4 col-4 ">
                     <img
                       src="images/icons8-javascript-48.png"
                       class="skillicons img-fluid"
@@ -224,34 +224,35 @@
           <div class="col-md-3"></div>
           <div class="col-md-6">
             <div class="container">
-              <form action="" id="submit-form">
-                <label for="fname">Full Name</label>
-                <input
-                  type="text"
-                  id="fname"
-                  name="fullname"
-                  placeholder="your full name.."
-                /><br />
+              <form class="row g-3"  id="signup-form" action="">
 
-                <label for="lname"> Email-id</label>
-                <input
-                  type="text"
-                  id="lname"
-                  name="Email"
-                  placeholder="Email-id.."
-                /><br />
+                <div class=" col-md-12">
+                  <label for="inputFirstName" class="form-label">Full Name</label>
+                  <input type="text" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" name="fname" class="form-control" id="inputFirstName" placeholder="First name">
+                </div>
 
-                <label for="subject">Subject</label>
-                <textarea
-                  id="subject"
-                  name="subject"
-                  placeholder="Write something.."
-                  style="height: 200px"
-                ></textarea
-                ><br />
-
-                <input type="submit" value="Submit" />
+                <div class="col-md-12">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" name="email"  class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+  
+                <div class="col-md-12">
+                  <label for="inputMobile4" class="form-label">Mobile Number</label>
+                  <input type="tel" name="mobile" class="form-control" id="inputMobile4" placeholder="Mobile Number">
+                </div>
+  
+                <div class="col-md-12">
+                  <label for="inputMessage" >Message</label>
+                  <textarea  class="form-control" name="message"  cols="30" rows="10" placeholder="type somthing"></textarea>
+                </div>
+                
+                
+                
+                <div class="col-12">
+                  <button type="submit"   style="width: 120px; font-weight: bolder; box-shadow: rgb(14, 230, 238); font-size: x-large; border-radius: 20px; color: rgb(227, 228, 243); background-color: rgb(8, 158, 163);" class="btn">submit</button>
+                </div>
               </form>
+              
             </div>
           </div>
         </div>
