@@ -18,7 +18,7 @@
     
   }
   .card-body{
-    width: 50%;
+  
     
     border: 6px solid white;
 
@@ -26,9 +26,7 @@
   #skillhead{
     background: #e0dada;
   }
-  .skillbtn{
-    margin: 5px;
-  }
+
 .skillicons{
   
   margin: auto;

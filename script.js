@@ -3,19 +3,15 @@ $(document).ready(function(){
     $('#signup-form').validate({
         
         rules:{
-            fname:{
+            name:{
                 required:true,
                 minlength:3
                 
             },
-            lname:{
-                required:true,
-                minlength:3
-                
-            },
+            
             email:{
                 required:true,
-                minlength:10
+                
                 
                 
             },
@@ -32,7 +28,7 @@ $(document).ready(function(){
             }
         },
         messages:{
-            email:"enter valid email",
+        
             message:"Type something"
             
         },
@@ -40,7 +36,7 @@ $(document).ready(function(){
         
         submitHandler :function(form){
             $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbwAgmUw3yAyfqFen8Seh9fT-CaR0CnAieeXaZ81G_oLGH_emBKCM3YuhQynrB02A7Uk/exec",
+                url:"https://script.google.com/macros/s/AKfycbxcD4V_STM7JG-05KRYWZfLmuiZ88aLWZ5Dnun_MLEgch5HMMU/exec",
                 data:$("#signup-form").serialize(),
                 method:"post",
                 success:function (response){
